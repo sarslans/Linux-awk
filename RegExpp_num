@@ -1,0 +1,13 @@
+testt@new-host Linux-awk]$ awk '/[0-9]/{print}' /etc/hosts
+127.0.0.1   localhost localhost.localdomain localhost4 localhost4.localdomain4
+::1         localhost localhost.localdomain localhost6 localhost6.localdomain6
+192.168.1.8 new-host
+[test@new-host Linux-awk]$ awk '/[9]/{print}' /etc/hosts
+192.168.1.8 new-host
+[test@new-host Linux-awk]$ awk '/[0]/{print}' /etc/hosts
+127.0.0.1   localhost localhost.localdomain localhost4 localhost4.localdomain4
+[test@new-host Linux-awk]$ awk '/[0-9]/{print}' /etc/hosts
+127.0.0.1   localhost localhost.localdomain localhost4 localhost4.localdomain4
+::1         localhost localhost.localdomain localhost6 localhost6.localdomain6
+192.168.1.8 new-host
+
